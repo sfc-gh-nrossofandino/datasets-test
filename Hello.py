@@ -1,3 +1,5 @@
+import streamlit as st
+
 conn = st.connection("snowflake")
 conn.cursor().execute('use database FREE_DATASET_GZTSZAS2KH9')
 query = conn.query("""SELECT i.cik, i.company_name, r.period_start_date, r.period_end_date, r.measure_description, TO_NUMERIC(r.value) AS value
