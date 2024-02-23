@@ -1,5 +1,3 @@
-altair
-numpy
-pandas
-pydeck
+snowflake-snowpark-python >= 1.12.1
+sqlalchemy
 streamlit
